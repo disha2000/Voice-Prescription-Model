@@ -5,8 +5,8 @@ from fastapi import FastAPI, Query, Path,Request, Form
 from ner_model import check_name_entity_recognition, POS,check_name_entity_recognition_pdf
 
 import json 
-from app import *
-import uvicron
+
+
 
 app = FastAPI()
 
@@ -106,3 +106,4 @@ if __name__ == '__main__':
      uvicorn.run(app, host="0.0.0.0", port=8000)
 
     
+
